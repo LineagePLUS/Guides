@@ -20,8 +20,10 @@ echo "# Your system needs to reboot, would you like to restart now?            "
 echo "# ======================================================================="
 read -p "Y or N: " reboot
 if [[ $reboot == [Yy] ]] ; then
+  rm ~/install.sh
   reboot
 fi
 if [[ $reboot == [Yy] ]] ; then
+  rm ~/install.sh
   exit
 fi
