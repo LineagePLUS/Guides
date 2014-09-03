@@ -9,7 +9,7 @@ echo "/swap       none    swap    sw      0       0 " >> /etc/fstab
 sudo chown root:root /swap
 sudo chmod 0600 /swap
 echo "vm.swappiness=90" >> /etc/sysct1.conf
-sudo apt-get install -y mumble-server
+sudo apt-get install -y libicu48 mumble-server
 dpkg-reconfigure mumble-server
 mkdir /apps
 mkdir /apps/mumble
